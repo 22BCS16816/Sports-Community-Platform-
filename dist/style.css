@@ -1,0 +1,282 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000; /* Pure Black */
+  color: #ffffff; /* White */
+  overflow-x: hidden;
+}
+
+/* Colors */
+:root {
+  --primary-color: #FF6F00; /* Orange */
+  --secondary-color: #000000; /* Black */
+  --heading-color: #D3D3D3; /* Light Gray for general headings */
+  --highlight-color: #FFD700; /* Muted Gold/Yellow-Orange for section highlights */
+  --white-color: #ffffff;
+  --light-gray: #f0f0f0; /* Light Gray */
+  --hover-color: #FF4500; /* Lighter Orange */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo .logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--white-color); /* White color for "SportsConnect" text */
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.navbar-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav ul li {
+  margin-left: 2rem;
+}
+
+.navbar-nav ul li a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.navbar-nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+.navbar-buttons button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.navbar-buttons button:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 3rem;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--highlight-color); /* Yellow-Orange for Home section heading */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn-primary {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.hero .btn-primary:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+/* Marquee Section */
+.marquee-section {
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+}
+
+.marquee-text {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+/* Event Cards */
+.events .event-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.event-card {
+  background-color: var(--light-gray); /* Light Gray for Event Cards */
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.event-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card h3 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  color: var(--secondary-color);
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.event-card p {
+  color: #7f8c8d;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.event-card .btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.8rem 1.8rem;
+  margin: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.event-card img:hover {
+  transform: scale(1.1);
+}
+
+.event-card .btn-primary:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+/* Events Section */
+.events h2 {
+  color: var(--highlight-color); /* Yellow-Orange for Events section heading */
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+/* Teams Section */
+.teams {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 3rem 0;
+}
+
+.teams h2 {
+  color: var(--heading-color); /* Light gray for heading */
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.teams p {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+/* Profile Section */
+.profile {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 3rem 0;
+}
+
+.profile h2 {
+  color: var(--heading-color); /* Light gray for heading */
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+.profile p {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 2rem 1rem;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  font-family: 'Poppins', sans-serif; /* Ensure 'Poppins' font */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
